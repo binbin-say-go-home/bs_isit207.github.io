@@ -20,16 +20,43 @@ body {
     margin: 20px;
 }
 
+.extra-info{
+	text-align: left;
+	padding-top: 50px;
+	padding-left: 50px;
+}
+
 .bookingDetails {
     text-align: center;
     border-radius: 8px;
     background-color: #f1faee;
     border: 3px solid #e63946;
     margin-top: 50px;
+    position: relative;
+    padding: 20px;
+
 }
 
-.extra-info{
-	text-align: left;
-	padding-top: 50px;
-	padding-left: 50px;
+#totalcost {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #064d89;
+    color: white; 
+	margin: 10px;
+	width: 15%;
+	height: 15%;
+	cursor: pointer;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#totalcost:hover {
+	background-color: #3e8e41
+}
+
+#totalcost:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }

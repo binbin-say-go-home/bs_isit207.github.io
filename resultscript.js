@@ -21,6 +21,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Calculate and display the hours
     calculateAndDisplayHours(pickupDate, pickupTime, returnDate, returnTime);
 	displayRate(car);
+	
+	calculateTotalCost(calculateHoursBetweenDates(pickupDate, pickupTime, returnDate, returnTime), displayRate(car));
+	
+	
+	
+	
 });
 
 function calculateHoursBetweenDates(startDate, startTime, endDate, endTime) {
@@ -59,6 +65,7 @@ function displayRate(car) {
     }
 
     rateElement.textContent = "Rate per hour for " + car + ": $" + rate;
+	return rate;
 }
 
 function generateRandomPlateNumber() {
@@ -80,3 +87,7 @@ function generateRandomPlateNumber() {
     return plateNumber;
 }
 
+function calculateTotalCost(hours, rate) {
+	const totalCost = hours * rate;
+	document.getElementById("totalcost").textContent = "Total Cost: $" + totalCost;
+}
