@@ -1,0 +1,23 @@
+body {
+    background-color: #a8dadc;
+}
+
+/* Style the login container */
+div {
+    border-radius: 8px;
+    background-color: #f1faee;
+    text-align: center;
+    border: 5px solid #e63946;
+    width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: bradley hand, cursive;
+}
+
+div input {
+    border-radius: 3px;
+	width: 200px;
+	height: 25px;
+}

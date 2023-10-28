@@ -1,0 +1,35 @@
+body {
+    background-color: #6F4E37;
+    margin: 0;
+}
+
+.top-row {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.top-row a {
+    color: white;
+    margin: 20px;
+}
+
+.bookingDetails {
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f1faee;
+    border: 3px solid #e63946;
+    margin-top: 50px;
+}
+
+.extra-info{
+	text-align: left;
+	padding-top: 50px;
+	padding-left: 50px;
+}

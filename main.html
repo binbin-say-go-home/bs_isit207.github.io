@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AZoom Car Rental</title>
+    <!-- Load external CSS styles -->
+    <link rel="stylesheet" href="mainstyles.css">
+</head>
+
+<body>
+    <div class="top-row">
+        <a href="main.html">Making a book</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="content">
+        <h1>AZoom Car Rental service</h1>
+		<form action="results.html" method="GET">
+			<label for="carSelection">Select a car:</label>
+			<select id="carSelection" name="car">
+				<option value="van">Van</option>
+				<option value="lambo">Lamborghini</option>
+				<option value="mini">Mini Cooper</option>
+				<option value="suv">SUV</option>
+			</select>
+			
+			<div id="carImageContainer">
+				<img id="carImage" src="van.jpg" alt="Car Image"><br><br>
+			</div>
+			
+			<div class="div-container">
+				<div class="date-picker" id="pickup-date">
+					<label for="pdate">Pickup date:</label><br>
+					<input type="date" id="pdate" name="pdate"><br>
+					<input type="time" id="ptime" name="ptime">
+				</div>
+			
+				<div class="date-picker" id="return-date">
+					<label for="rdate">Return date:</label><br>
+					<input type="date" id="rdate" name="rdate"><br>
+					<input type="time" id="rtime" name="rtime">
+				</div>
+			</div>
+			
+			<div class="info-container">
+				<br>
+				<label for="cardNumber">Credit Card Number:</label>
+				<input type="text" id="cardNumber" name="cardNumber" maxlength="19" required><br>
+            
+				<label for="cardName">Name on the Card:</label>
+				<input type="text" id="cardName" name="cardName" required><br>
+            
+				<label for="expiryDate">Expiry Date:</label>
+				<input type="month" id="expiryDate" name="expiryDate" required><br>
+            
+				<label for="cvv">CVV:</label>
+				<input type="password" id="cvv" name="cvv" maxlength="3" required><br>
+
+			</div>
+			
+			<button type="submit">Submit</button>
+		</form>
+    </div>
+
+    <script src="mainscripts.js"></script>
+</body>
+</html>

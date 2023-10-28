@@ -1,0 +1,83 @@
+h1 {
+    font-family: bradley hand, cursive;
+}
+
+body {
+    background-color: #6F4E37;
+    margin: 0;
+}
+
+.top-row {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.top-row a {
+    color: white;
+    margin: 20px;
+}
+
+.content {
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f1faee;
+    border: 3px solid #e63946;
+    margin-top: 50px;
+}
+
+#carImage {
+    width: 20%;
+    height: 20%;
+}
+
+#carSelection {
+    font-size: 15px;
+    padding: 5px;
+    width: 200px;
+}
+
+.date-picker {
+    display: inline-block;
+    width: 20%; 
+    margin: 10px;
+}
+
+.div-container {
+    text-align: center;
+}
+
+#pdate, #ptimepicker {
+    width: 200px;
+    height: 30px;
+	margin: 15px;
+}
+
+#rdate, #rtimepicker {
+    width: 200px;
+    height: 30px;
+	margin: 15px;
+}
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+		padding-left: 650px;
+    }
+
+    .info-container label {
+        width: 200px;
+        text-align: left;
+    }
+
+    .info-container input {
+        width: 20%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
